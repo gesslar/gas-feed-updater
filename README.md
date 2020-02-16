@@ -6,10 +6,13 @@ This GAS will read an ATOM file and post updates to Discord.
 This script should be attached to a Google Sheet, which is used to track previously sent messages.
 
 # Google Sheet
-This script expects the following columns in this order: Date, Time, Summary, Description
+This script expects the following columns in this order: `Date`, `Time`, `Summary`, `Description`
 
 # ATOM Fields
-This script reads the following fields from each ATOM entry: published, summary, content, title
+This script reads the following fields from each ATOM entry: `published`, `summary`, `content`, `title`
+
+# Document Properties
+This script reads and writes the most recently published date/time in UNIX format to the document property `lastUpdated`.
 
 
 # Script Properties
