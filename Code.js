@@ -19,7 +19,7 @@ function run() {
   const doc     = XmlService.parse(feed);
   const root    = doc.getRootElement();
   const atom    = XmlService.getNamespace("http://www.w3.org/2005/Atom");
-  const entries = root.getChildren("entry", atom);
+  let   entries = root.getChildren("entry", atom);
 
   if(!entries.length) return ;
   entries = entries.filter( entry => {
