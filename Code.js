@@ -1,3 +1,5 @@
+"use strict"
+
 function run() {
   const scriptProperties   = PropertiesService.getScriptProperties();
   const documentProperties = PropertiesService.getDocumentProperties();
